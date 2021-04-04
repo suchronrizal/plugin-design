@@ -273,6 +273,11 @@
   color: #64c93f;
 }
 
+.btn-custom-outline-default {
+  border-color: #64c93f !important;
+  color: #64c93f;
+}
+
 /* tab */
 .nav-link.green {
   color: #64c93f !important;
@@ -315,10 +320,37 @@
 }
 /* end tab */
 
-/* step process */
-ol.custom-step {
+/* step process right */
+ol.custom-step-right {
   padding-left: 0px;
 }
-ol.custom-step .step-icon {
-  width: 5rem;
+ol.custom-step-right .step-icon {
+  width: 4rem;
+}
+ol.custom-step-right .step-content {
+  width: 65%;
+}
+.step-icon::before {
+  border-left: 2px solid #64c93f;
+  top: 64px;
+}
+
+/* step process left */
+ol.custom-step-left {
+  padding-left: 0px;
+}
+ol.custom-step-left .step-icon::before {
+  content: "";
+  position: absolute;
+  left: 3.5rem;
+  top: 68px;
+  display: inline-block;
+}
+ol.custom-step-left .step-icon {
+  position: relative;
+  left: 27rem;
+}
+ol.custom-step-left .step-content {
+  margin-right: 5.5rem;
+  margin-left: 0px;
 }
