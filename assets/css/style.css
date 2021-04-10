@@ -213,6 +213,10 @@
   .dot-pattern-top {
     display: none;
   }
+  .border-radius {
+    border-top-right-radius: unset;
+    border-bottom-right-radius: unset;
+  }
 }
 /* slider */
 @media (min-width: 768px) and (max-width: 991.98px) {
@@ -239,6 +243,10 @@
     width: 100%;
     top: -15rem;
   }
+  .border-radius {
+    border-top-right-radius: unset;
+    border-bottom-right-radius: unset;
+  }
 }
 
 @media (min-width: 992px) and (max-width: 1199.98px) {
@@ -260,6 +268,10 @@
   .dot-pattern {
     left: 371px;
     top: 419px;
+  }
+  .border-radius {
+    border-top-right-radius: unset;
+    border-bottom-right-radius: unset;
   }
 }
 @media (min-width: 1024px) and (max-width: 1279px) {
@@ -288,6 +300,48 @@
   .bg-img-absolute {
     top: -15.5rem;
   }
+}
+
+@media only screen and (min-width: 1024px) {
+  .border-radius {
+    border-top-right-radius: 0.75rem;
+    border-bottom-right-radius: 0.75rem;
+  }
+}
+
+@media only screen and (min-width: 1220px) {
+  /* step process left */
+  ol.custom-step-left {
+    padding-left: 0px !important;
+  }
+  ol.custom-step-left .step-icon::before {
+    content: "";
+    position: absolute;
+    left: 2rem;
+    top: 68px;
+    bottom: -6rem;
+    display: inline-block;
+  }
+  ol.custom-step-left .step-icon {
+    position: relative;
+    left: 28rem;
+  }
+  ol.custom-step-left .step-content {
+    margin-right: 5.5rem;
+    margin-left: 0px;
+  }
+  ol.custom-step-left > li:first-child {
+    padding: 1rem 0 2rem 0;
+  }
+  ol.custom-step-left > li {
+    padding: 2.7rem 0 2rem 0;
+  }
+}
+ol.custom-step-left {
+  padding-left: 0px !important;
+}
+ol.custom-step-left .step-icon {
+  width: 4rem;
 }
 
 .btn-plugind {
@@ -367,24 +421,4 @@ ol.custom-step-right .step-content {
 .step-icon::before {
   border-left: 2px solid #64c93f;
   top: 64px;
-}
-
-/* step process left */
-ol.custom-step-left {
-  padding-left: 0px;
-}
-ol.custom-step-left .step-icon::before {
-  content: "";
-  position: absolute;
-  left: 3.5rem;
-  top: 68px;
-  display: inline-block;
-}
-ol.custom-step-left .step-icon {
-  position: relative;
-  left: 27rem;
-}
-ol.custom-step-left .step-content {
-  margin-right: 5.5rem;
-  margin-left: 0px;
 }
